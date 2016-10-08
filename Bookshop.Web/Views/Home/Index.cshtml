@@ -1,0 +1,121 @@
+﻿@using PagedList.Mvc;
+@using PagedList;
+@model IPagedList<Bookshop.ViewModel.BookGridViewModel>
+
+@{
+    ViewBag.Title = "Bookish | Home";
+}
+
+<div class="topslider"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="filterbox">
+                <h3>Categories</h3>
+                <hr />
+                <div class="">
+                    <div class="list-category">
+                        <a href="" class="category-item-heading"><h4>CSE</h4></a>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">Programming<span class="badge">14</span></a>
+                            <a href="#" class="list-group-item">Networking<span class="badge">3</span></a>
+                            <a href="#" class="list-group-item">Database<span class="badge">6</span></a>
+                            <a href="#" class="list-group-item">Software Engineering<span class="badge">7</span></a>
+                        </div>
+                    </div>
+
+                    <div class="list-category">
+                        <a href="" class="category-item-heading"><h4>EEE</h4></a>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">Mathematics<span class="badge">15</span></a>
+                            <a href="#" class="list-group-item">Electronics<span class="badge">7</span></a>
+                        </div>
+                    </div>
+
+                    <div class="list-category">
+                        <a href="" class="category-item-heading"><h4>BBA</h4></a>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">English<span class="badge">5</span></a>
+                            <a href="#" class="list-group-item">Accounting<span class="badge">3</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filterbox ">
+                <h3>Filter Books</h3>
+                <hr />
+                <div class="">
+                    <div class="form">
+                        <div class="form-group">
+                            <h4>Condition</h4>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="used">Used</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="new">New</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group top-buffer">
+                            <h4>Price</h4>
+                            <div class="range">
+                                <input type="range" value="20" min="10" max="200" step="10" />
+                            </div>
+                        </div>
+                        <div class="form-group top-buffer">
+                            <button type="submit" class="btn btn-primary btn-block">Filter Result</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="latest_uploads">
+                <h3 class="pull-lefttext-left">Latest Uploads</h3>
+
+                <hr /><br />
+                <div class="row">
+                    <!-- Item 1 -->
+                  @foreach (var item in Model)
+                  {
+                    <div class="list-single-book col-md-3">
+                        <a href="/Home/Detail/?id=@item.Id">
+                            <div class="thumbnail">
+                                <img src="@item.Photo" alt="@item.Title">
+                                <div class="caption">
+                                    <dl>
+                                        <dt><h4>@Html.DisplayFor(model => item.Title)</h4></dt>
+                                        <dd><h5>@Html.DisplayFor(model => item.Author)</h5></dd>
+                                    </dl>
+                                    <h4><span class="label label-info"><i class="fa fa-money fa-fw"></i> @Html.DisplayFor(model => item.Price) BDT</span></h4>
+                                    <small>@Html.DisplayFor(m => item.UploadDateTime)</small>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                  }
+
+                </div>
+
+                @*<div class="pull-right">
+                    <ul class="pagination">
+                        <li class="disabled"><a href="#">«</a></li>
+                        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">»</a></li>
+                    </ul>
+                </div>*@
+
+          
+
+                @Html.PagedListPager(Model, page => Url.Action("Index",
+                    new { page }))
+            </div>
+        </div>
+    </div>
+</div>

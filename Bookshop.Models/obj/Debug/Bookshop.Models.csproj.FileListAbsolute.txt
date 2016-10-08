@@ -1,0 +1,14 @@
+D:\Programing\Programs\Bookshop\Bookshop.Models\bin\Debug\Bookshop.Models.dll.config
+D:\Programing\Programs\Bookshop\Bookshop.Models\bin\Debug\Bookshop.Models.dll
+D:\Programing\Programs\Bookshop\Bookshop.Models\bin\Debug\Bookshop.Models.pdb
+D:\Programing\Programs\Bookshop\Bookshop.Models\bin\Debug\EntityFramework.dll
+D:\Programing\Programs\Bookshop\Bookshop.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Programing\Programs\Bookshop\Bookshop.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Programing\Programs\Bookshop\Bookshop.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Programing\Programs\Bookshop\Bookshop.Models\bin\Debug\EntityFramework.xml
+D:\Programing\Programs\Bookshop\Bookshop.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Programing\Programs\Bookshop\Bookshop.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Programing\Programs\Bookshop\Bookshop.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Programing\Programs\Bookshop\Bookshop.Models\obj\Debug\Bookshop.Models.csprojResolveAssemblyReference.cache
+D:\Programing\Programs\Bookshop\Bookshop.Models\obj\Debug\Bookshop.Models.dll
+D:\Programing\Programs\Bookshop\Bookshop.Models\obj\Debug\Bookshop.Models.pdb

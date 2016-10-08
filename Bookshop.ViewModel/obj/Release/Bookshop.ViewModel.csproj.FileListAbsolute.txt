@@ -1,0 +1,10 @@
+D:\Programing\Programs\Bookshop\Bookshop.ViewModel\bin\Release\Bookshop.ViewModel.dll.config
+D:\Programing\Programs\Bookshop\Bookshop.ViewModel\bin\Release\Bookshop.ViewModel.dll
+D:\Programing\Programs\Bookshop\Bookshop.ViewModel\bin\Release\Bookshop.ViewModel.pdb
+D:\Programing\Programs\Bookshop\Bookshop.ViewModel\bin\Release\EntityFramework.dll
+D:\Programing\Programs\Bookshop\Bookshop.ViewModel\bin\Release\EntityFramework.SqlServer.dll
+D:\Programing\Programs\Bookshop\Bookshop.ViewModel\bin\Release\EntityFramework.xml
+D:\Programing\Programs\Bookshop\Bookshop.ViewModel\bin\Release\EntityFramework.SqlServer.xml
+D:\Programing\Programs\Bookshop\Bookshop.ViewModel\obj\Release\Bookshop.ViewModel.csprojResolveAssemblyReference.cache
+D:\Programing\Programs\Bookshop\Bookshop.ViewModel\obj\Release\Bookshop.ViewModel.dll
+D:\Programing\Programs\Bookshop\Bookshop.ViewModel\obj\Release\Bookshop.ViewModel.pdb

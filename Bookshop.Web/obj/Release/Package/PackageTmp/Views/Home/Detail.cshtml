@@ -1,0 +1,135 @@
+﻿@model Bookshop.ViewModel.BookDetailViewModel
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+
+
+<div class="breadcumb">
+    <div class="container">
+        <h3 class="vcenter">@Html.DisplayFor(m => m.Title)</h3>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="detail row top-buffer bottom-buffer ">
+        <div class="col-md-4">
+            <div class="imagebox center-block">
+                <img src="@Model.Photo" alt=""/>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <h2>@Html.DisplayFor(m => m.Title)</h2>
+            <p class="lead">@Html.DisplayFor(m => m.Edition) Edition</p>
+            <h4>Book By <strong>@Html.DisplayFor(m => m.Author)</strong></h4>
+            <p><span class="label label-default">@Html.DisplayFor(m => m.Department)</span> <span class="label label-default">@Html.DisplayFor(m => m.Category)</span></p>
+
+            <h3><span class="label label-primary"><i class="fa fa-money fa-fw"></i> @Html.DisplayFor(m => m.Price) BDT</span></h3>
+            <div class="space"></div>
+            <table class="table">
+                <tr>
+                    <td>Condition</td>
+                    <td><strong>@Html.DisplayFor(m => m.Condition)</strong></td>
+                </tr>
+                <tr>
+                    <td>Upload</td>
+                    <td><strong>@Html.DisplayFor(m => m.UploadDateTime)</strong></td>
+                </tr>
+                <tr>
+                    <td>Additional Info</td>
+                    <td><strong>@Html.DisplayFor(m => m.AdditionalInfo)</strong></td>
+                </tr>
+                <tr>
+                    <td>Contact</td>
+                    <td><button class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-phone fa-lg"></i> Contact No</button> @*<button class="btn btn-primary"><i class="fa fa-commenting-o fa-lg"></i> Message</button>*@ <button class="btn btn-primary"><i class="fa fa-envelope-o fa-lg"></i> Email</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Contact Number</h4>
+                </div>
+                <div class="modal-body">
+                    <p>@Html.DisplayFor(m => m.ContactNo)</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <hr />
+    @* <div class="similar-products">
+            <h3>Similar Books</h3>
+            <div class="space"></div>
+            <div class="row">
+                <div class="list-single-book col-md-3">
+                    <div class="thumbnail">
+                        <img src="img/books/1.png" alt="...">
+                        <div class="caption">
+                            <dl>
+                                <dt><h4 title="Object Oriented System Analysis &amp Design usin UML">Object Oriented System ...</h4></dt>
+                                <dd><h5>Simon Bennett</h5></dd>
+                            </dl>
+                            <h4><span class="label label-info"><i class="fa fa-money fa-fw"></i> 300 BDT</span></h4>
+                            <small>30 July, 2016</small>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="list-single-book col-md-3">
+                    <div class="thumbnail">
+                        <img src="img/books/2.jpg" alt="...">
+                        <div class="caption">
+                            <dl>
+                                <dt><h4 title="Object Oriented System Analysis &amp Design usin UML">Object Oriented System ...</h4></dt>
+                                <dd><h5>Simon Bennett</h5></dd>
+                            </dl>
+                            <h4><span class="label label-info"><i class="fa fa-money fa-fw"></i> 300 BDT</span></h4>
+                            <small>30 July, 2016</small>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="list-single-book col-md-3">
+                    <div class="thumbnail">
+                        <img src="img/books/3.jpg" alt="...">
+                        <div class="caption">
+                            <dl>
+                                <dt><h4 title="Object Oriented System Analysis &amp Design usin UML">Object Oriented System ...</h4></dt>
+                                <dd><h5>Simon Bennett</h5></dd>
+                            </dl>
+                            <h4><span class="label label-info"><i class="fa fa-money fa-fw"></i> 300 BDT</span></h4>
+                            <small>30 July, 2016</small>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="list-single-book col-md-3">
+                    <div class="thumbnail">
+                        <img src="img/books/4.jpg" alt="...">
+                        <div class="caption">
+                            <dl>
+                                <dt><h4 title="Object Oriented System Analysis &amp Design usin UML">Object Oriented System ...</h4></dt>
+                                <dd><h5>Simon Bennett</h5></dd>
+                            </dl>
+                            <h4><span class="label label-info"><i class="fa fa-money fa-fw"></i> 300 BDT</span></h4>
+                            <small>30 July, 2016</small>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+</div>

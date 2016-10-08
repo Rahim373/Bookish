@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Dashboard</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<script src="js/vendor/jquery-1.11.2.min.js"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt="" /></a>
+				</div>
+				
+				<div class="collapse navbar-collapse js-navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CSE <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Networking</a></li>
+								<li><a href="#">Programming</a></li>
+								<li><a href="#">Database</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Others</a></li>
+							</ul>
+						</li>
+						
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">EEE <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Mathematics</a></li>
+								<li><a href="#">Programming</a></li>
+								<li><a href="#">Database</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Others</a></li>
+							</ul>
+						</li>
+						
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">BBA <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Networking</a></li>
+								<li><a href="#">Programming</a></li>
+								<li><a href="#">Database</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Others</a></li>
+							</ul>
+						</li>
+					</ul>
+					
+					
+					
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="login.html">Logout</a></li>
+					</ul>
+					
+					<form class="navbar-form navbar-right">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search Books"></input>
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="submit"><i class="fa fa-search fa-fw"></i></button>
+							</span>
+						</div><!-- /input-group -->
+						
+					</form>
+				</div>
+			</div>
+			<!-- /.nav-collapse -->
+		</nav>
+		
+		<div class="breadcumb">
+			<div class="container">
+				<h3 class="vcenter">Dashboard | Account</h3>
+			</div>
+		</div>
+		
+		
+		<div class="container">
+			<div class="detail row top-buffer bottom-buffer">
+				<div class="col-md-3">
+					<div class="list-category">
+						<div class="list-group">
+							<a href="#" class="list-group-item list-group-item-info">
+								<h4 class="list-group-item-heading">Account</h4>
+								<p class="list-group-item-text">Details of your account</p>
+							</a>
+							<a href="#" class="list-group-item">
+								<h4 class="list-group-item-heading">Message</h4>
+								<p class="list-group-item-text">Recent conversations</p>
+							</a>
+							<a href="#" class="list-group-item">
+								<h4 class="list-group-item-heading">Uploaded Books</h4>
+								<p class="list-group-item-text">Recent books by you</p>
+							</a>
+							<a href="#" class="list-group-item">
+								<h4 class="list-group-item-heading">Sell Book</h4>
+								<p class="list-group-item-text">Upload new book to sell</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="profile-img center-block">
+						<img class="img-rounded img-responsive" src="img/profile_photo/1.jpg" alt=""/>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h2>Md. Abdur Rahim</h2>
+					
+					<div class="space"></div>
+					<table class="table">
+						<tr>
+							<td>Email</td>
+							<td><strong>example@domain.com</strong></td>
+						</tr>
+						<tr>
+							<td>UIU ID</td>
+							<td><strong>011131148</strong></td>
+						</tr>
+						<tr>
+							<td>Contact No</td>
+							<td><strong>+8801673457667</strong></td>
+						</tr>
+						<tr>
+							<td>Address</td>
+							<td><strong></strong></td>
+						</tr>
+						<tr>
+							<td>Password</td>
+							<td><strong>******</strong></td>
+						</tr>
+					</table>
+					<div class="space"></div>
+					<button class="btn btn-success pull-right btn-xs">Change</button>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		<footer class="footer">
+			<div class="container footer_top">
+				<div class="row">
+					<div class="col-md-4">
+						<h3>Pages</h3>
+						<ul class="list menu-list">
+							<li>About Us</li>
+							<li>Terms & Conditions</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<h3>Subscribe</h3>
+						<form class="form">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Your Email Address"></input>
+								<span class="input-group-btn">
+									<button class="btn btn-success" type="submit">Subscribe</button>
+								</span>
+							</div><!-- /input-group -->
+						
+					</form>
+				</div>
+				<div class="col-md-4">
+					<h3>Contact Us</h3>
+					<address>
+						<strong>United International University</strong><br>
+						House#80, Road#8/A<br>
+						Mirza Golam Hafiz Road, Dhaka 1209<br>
+						<abbr title="Phone">P:</abbr> +88(02) 9125913-6
+					</address>
+				</div>
+			</div>
+			<div class="footer_bottom">
+				<p class="text-center">Designed &amp Developed by Md. Abdur Rahim</p>
+			</div>
+		</footer>
+		
+	</div>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".dropdown").hover(            
+			function() {
+				$('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+				$(this).toggleClass('open');        
+			},
+			function() {
+				$('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+				$(this).toggleClass('open');       
+			}
+			);
+		});
+	</script>
+</body>																						
